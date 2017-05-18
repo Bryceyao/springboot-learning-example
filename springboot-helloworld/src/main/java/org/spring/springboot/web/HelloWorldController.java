@@ -9,9 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by bysocket on 16/4/26.
  */
 @RestController
+@RequestMapping("/mvc")
 public class HelloWorldController {
 
-    @RequestMapping("/")
+    @RequestMapping("/sayHello")
     public String sayHello() {
         return "Hello,World!";
     }

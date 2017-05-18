@@ -1,6 +1,5 @@
 package org.spring.springboot.property;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
@@ -54,10 +53,6 @@ public class HomeProperties {
 
     @Override
     public String toString() {
-        return "HomeProperties{" +
-                "province='" + province + '\'' +
-                ", city='" + city + '\'' +
-                ", desc='" + desc + '\'' +
-                '}';
+        return "HomeProperties{" + "province='" + province + '\'' + ", city='" + city + '\'' + ", desc='" + desc + '\'' + '}';
     }
 }
