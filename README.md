@@ -67,7 +67,7 @@ CREATE TABLE `city` (
 ````
 插入基础数据
 ````
-INSERT city VALUES (1 ,1,'温岭市','BYSocket 的家在温岭。');
+INSERT city VALUES (1 ,1,'长沙市','BYSocket 的家在长沙。');
 ````
  <br>
 ### 《 springboot-mybatis 工程 Quick Start 》
@@ -92,8 +92,8 @@ http://localhost:8080/api/city?cityName=温岭市
 {
     "id": 1,
     "provinceId": 1,
-    "cityName": "温岭市",
-    "description": "我的家在温岭。"
+    "cityName": "长沙市",
+    "description": "我的家在长沙。"
 }
 ````
 最后，<br/>
