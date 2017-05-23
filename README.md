@@ -1,7 +1,8 @@
 # springboot-learning-example
 spring boot 实践学习案例，是 spring boot 初学者及核心技术巩固的最佳实践。
 
-## 作者与学习乐园
+## 摘要
+原创出处 www.bysocket.com 「泥瓦匠BYSocket 」欢迎转载，保留摘要，谢谢！
 源码地址：我的[GitHub地址](https://github.com/JeffLi1993 "GitHub")、[OSCGit地址](https://git.oschina.net/jeff1993/springboot-learning-example "OSCGit")<br>
 作者：[泥瓦匠BYSocket](http://www.bysocket.com/ "泥瓦匠BYSocket")<br>
 
@@ -54,19 +55,19 @@ CREATE DATABASE springbootdb;
 ````
 创建表 city 城市 (因为我喜欢徒步)
 ````
-DROP TABLE IF EXISTS  `city`;
-CREATE TABLE `city` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '城市编号',
-  `province_id` int(10) unsigned  NOT NULL COMMENT '省份编号',
-  `city_name` varchar(25) DEFAULT NULL COMMENT '城市名称',
-  `description` varchar(25) DEFAULT NULL COMMENT '描述',
-  PRIMARY KEY (`id`)
+DROP TABLE IF EXISTS  city;
+CREATE TABLE city (
+  id int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '城市编号',
+  province_id int(10) unsigned  NOT NULL COMMENT '省份编号',
+  city_name varchar(25) DEFAULT NULL COMMENT '城市名称',
+  description varchar(25) DEFAULT NULL COMMENT '描述',
+  PRIMARY KEY (id)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
-````
+
 插入基础数据
-````
-INSERT city VALUES (1 ,1,'温岭市','BYSocket 的家在温岭。');
-````
+
+INSERT city VALUES (4301 ,43,'长沙市','Bryce 以后定居长沙。');
+
  <br>
 ### 《 springboot-mybatis 工程 Quick Start 》
 首先 check 基本环境配置完成，创建好数据库和表。
@@ -88,10 +89,10 @@ http://localhost:8080/api/city?cityName=温岭市
 可以看到返回的 JSON 结果：
 ````
 {
-    "id": 1,
-    "provinceId": 1,
-    "cityName": "温岭市",
-    "description": "我的家在温岭。"
+    "id": 4301,
+    "provinceId": 43,
+    "cityName": "长沙市",
+    "description": "Bryce 以后定居长沙。"
 }
 ````
 最后，<br/>
