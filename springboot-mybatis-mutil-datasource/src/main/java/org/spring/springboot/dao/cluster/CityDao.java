@@ -18,4 +18,6 @@ public interface CityDao {
      * @param cityName 城市名
      */
     City findByName(@Param("cityName") String cityName);
+    
+    City findById(@Param("id") Long id);
 }

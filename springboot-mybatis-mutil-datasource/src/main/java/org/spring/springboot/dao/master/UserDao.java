@@ -1,5 +1,7 @@
 package org.spring.springboot.dao.master;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.spring.springboot.domain.User;
@@ -18,5 +20,7 @@ public interface UserDao {
      * @param userName
      * @return
      */
-    User findByName(@Param("userName") String userName);
+    List<User> findByName(@Param("userName") String userName);
+    
+    User findById(@Param("id") Long id);
 }

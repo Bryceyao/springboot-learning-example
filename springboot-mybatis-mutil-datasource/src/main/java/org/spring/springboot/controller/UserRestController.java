@@ -1,5 +1,7 @@
 package org.spring.springboot.controller;
 
+import java.util.List;
+
 import org.spring.springboot.domain.City;
 import org.spring.springboot.domain.User;
 import org.spring.springboot.service.UserService;
@@ -27,7 +29,7 @@ public class UserRestController {
      * @return
      */
     @RequestMapping(value = "/api/user", method = RequestMethod.GET)
-    public User findByName(@RequestParam(value = "userName", required = true) String userName) {
+    public List<User> findByName(@RequestParam(value = "userName", required = true) String userName) {
         return userService.findByName(userName);
     }
 

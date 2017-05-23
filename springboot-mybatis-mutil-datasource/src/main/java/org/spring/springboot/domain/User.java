@@ -55,4 +55,39 @@ public class User {
     public void setDescription(String description) {
         this.description = description;
     }
+    
+    
+    /*
+    Navicat MySQL Data Transfer
+
+    Source Server         : MySql3307
+    Source Server Version : 50633
+    Source Host           : localhost:3307
+    Source Database       : test
+
+    Target Server Type    : MYSQL
+    Target Server Version : 50633
+    File Encoding         : 65001
+
+    Date: 2017-05-22 17:50:26
+    
+
+    SET FOREIGN_KEY_CHECKS=0;
+
+    -- ----------------------------
+    -- Table structure for user
+    -- ----------------------------
+    DROP TABLE IF EXISTS user;
+    CREATE TABLE user (
+      id int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'ID',
+      user_name varchar(25) DEFAULT NULL COMMENT '姓名',
+      description varchar(25) DEFAULT NULL COMMENT '描述',
+      PRIMARY KEY (id)
+    ) ENGINE=InnoDB AUTO_INCREMENT=4406 DEFAULT CHARSET=utf8;
+
+    -- ----------------------------
+    -- Records of user
+    -- ----------------------------
+    INSERT INTO user VALUES ('1', '张三', '朋友');
+    INSERT INTO user VALUES ('2', '李四', '同事');*/
 }

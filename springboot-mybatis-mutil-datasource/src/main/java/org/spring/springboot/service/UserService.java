@@ -1,5 +1,7 @@
 package org.spring.springboot.service;
 
+import java.util.List;
+
 import org.spring.springboot.domain.City;
 import org.spring.springboot.domain.User;
 
@@ -16,5 +18,5 @@ public interface UserService {
      * @param userName
      * @return
      */
-    User findByName(String userName);
+    List<User> findByName(String userName);
 }
