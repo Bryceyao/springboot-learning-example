@@ -1,9 +1,14 @@
 # springboot-learning-example
 spring boot 实践学习案例，是 spring boot 初学者及核心技术巩固的最佳实践。
 
-## 摘要
-原创作者：[泥瓦匠BYSocket](http://www.bysocket.com/ "泥瓦匠BYSocket") 欢迎转载，保留摘要，谢谢！<br>
-原创地址：[GitHub地址](https://github.com/JeffLi1993 "GitHub")、[OSCGit地址](https://git.oschina.net/jeff1993/springboot-learning-example "OSCGit")<br>
+## 作者与学习乐园
+源码地址：我的[GitHub地址](https://github.com/JeffLi1993 "GitHub")、[OSCGit地址](https://git.oschina.net/jeff1993/springboot-learning-example "OSCGit")<br>
+作者：[泥瓦匠BYSocket](http://www.bysocket.com/ "泥瓦匠BYSocket")<br>
+QQ 群<br>
+编程之美① 365234583  <br>
+编程之美② 290714704  <br><br>
+关注微信公众号【泥瓦匠BYSokcet】，及时得到技术文章推送<br>
+![公众号](http://www.bysocket.com/wp-content/uploads/2017/01/qrcode_for_gh_cd421e7eb7d6_430.jpg)
 
 
 ## 一、项目结构
@@ -28,6 +33,8 @@ spring boot 实践学习案例，是 spring boot 初学者及核心技术巩固�
 #### c. 『 基础 – 数据存储篇 』
 - springboot-mybatis <br>
  [《Springboot 整合 Mybatis 的完整 Web 案例》](http://www.bysocket.com/?p=1610 "Springboot 整合 Mybatis 的完整 Web 案例")<br>
+- springboot-mybatis-annotation <br>
+ [《Spring Boot 整合 Mybatis Annotation 注解的完整 Web 案例》](http://www.bysocket.com/?p=1811 "Spring Boot 整合 Mybatis Annotation 注解的完整 Web 案例")<br>
 - springboot-mybatis-mutil-datasource <br>
  [《Spring Boot 整合 Mybatis 实现 Druid 多数据源详解》](http://www.bysocket.com/?p=1712 "Spring Boot 整合 Mybatis 实现 Druid 多数据源详解")<br>
 
@@ -37,13 +44,13 @@ spring boot 实践学习案例，是 spring boot 初学者及核心技术巩固�
  [《Spring Boot 整合 Redis 实现缓存操作》](http://www.bysocket.com/?p=1756 "Spring Boot 整合 Mybatis 实现 Druid 多数据源详解")<br>
 
 #### e. 『 其他篇 』
+- springboot-elasticsearch <br>
+ [《Spring Boot 整合 Elasticsearch，实现 function score query 权重分查询》](http://www.bysocket.com/?p=1829 "Spring Boot 整合 Elasticsearch，实现 function score query 权重分查询")<br>
 - springboot-dubbo-server <br>
 - springboot-dubbo-client <br>
 Dubbo 服务提供者工程和 Dubbo 服务消费者工程 <br>
  [《Springboot 整合 Dubbo/ZooKeeper 详解 SOA 案例》](http://www.bysocket.com/?p=1681 "Springboot 整合 Dubbo/ZooKeeper 详解 SOA 案例")<br>
  [《Spring Boot 中如何使用 Dubbo Activate 扩展点》](http://www.bysocket.com/?p=1782 "Spring Boot 中如何使用 Dubbo Activate 扩展点")<br>
-- springboot-validation-over-json <br>
- [《Spring Boot HTTP over JSON 的错误码异常处理》](http://www.bysocket.com/?p=1692 "Spring Boot HTTP over JSON 的错误码异常处理")<br>
 
 
 ## 二、项目 Quick Start 快速开发指南
@@ -54,19 +61,19 @@ CREATE DATABASE springbootdb;
 ````
 创建表 city 城市 (因为我喜欢徒步)
 ````
-DROP TABLE IF EXISTS  city;
-CREATE TABLE city (
-  id int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '城市编号',
-  province_id int(10) unsigned  NOT NULL COMMENT '省份编号',
-  city_name varchar(25) DEFAULT NULL COMMENT '城市名称',
-  description varchar(25) DEFAULT NULL COMMENT '描述',
-  PRIMARY KEY (id)
+DROP TABLE IF EXISTS  `city`;
+CREATE TABLE `city` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '城市编号',
+  `province_id` int(10) unsigned  NOT NULL COMMENT '省份编号',
+  `city_name` varchar(25) DEFAULT NULL COMMENT '城市名称',
+  `description` varchar(25) DEFAULT NULL COMMENT '描述',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
-
+````
 插入基础数据
-
-INSERT city VALUES (4301 ,43,'长沙市','Bryce 以后定居长沙。');
-
+````
+INSERT city VALUES (1 ,1,'温岭市','BYSocket 的家在温岭。');
+````
  <br>
 ### 《 springboot-mybatis 工程 Quick Start 》
 首先 check 基本环境配置完成，创建好数据库和表。
@@ -83,19 +90,18 @@ mvn clean install
 #### 3. 运行工程
 右键运行工程包中 `org.spring.springboot.Application` Spring Boot 应用启动类的 main 函数，然后在浏览器访问：
 `````
-http://localhost:8080/api/city?cityName=长沙市
+http://localhost:8080/api/city?cityName=温岭市
 `````
 可以看到返回的 JSON 结果：
 ````
 {
-    "id": 4301,
-    "provinceId": 43,
-    "cityName": "长沙市",
-    "description": "Bryce 以后定居长沙。"
+    "id": 1,
+    "provinceId": 1,
+    "cityName": "温岭市",
+    "description": "我的家在温岭。"
 }
 ````
 最后，<br/>
 
 推荐
-[Spring Boot教程与Spring Cloud教程](https://git.oschina.net/didispace/SpringBoot-Learning "Spring Boot教程与Spring Cloud教程") 
-
+ [《Spring Boot教程与Spring Cloud教程》](https://git.oschina.net/didispace/SpringBoot-Learning "Spring Boot教程与Spring Cloud教程")<br>
