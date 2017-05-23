@@ -2,9 +2,8 @@
 spring boot 实践学习案例，是 spring boot 初学者及核心技术巩固的最佳实践。
 
 ## 摘要
-原创出处 www.bysocket.com 「泥瓦匠BYSocket 」欢迎转载，保留摘要，谢谢！<br>
+原创作者：[泥瓦匠BYSocket](http://www.bysocket.com/ "泥瓦匠BYSocket") 欢迎转载，保留摘要，谢谢！<br>
 源码地址：我的[GitHub地址](https://github.com/JeffLi1993 "GitHub")、[OSCGit地址](https://git.oschina.net/jeff1993/springboot-learning-example "OSCGit")<br>
-作者：[泥瓦匠BYSocket](http://www.bysocket.com/ "泥瓦匠BYSocket")<br>
 
 
 ## 一、项目结构
