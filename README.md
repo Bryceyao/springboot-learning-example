@@ -28,22 +28,24 @@ spring boot 实践学习案例，是 spring boot 初学者及核心技术巩固�
 #### c. 『 基础 – 数据存储篇 』
 - springboot-mybatis <br>
  [《Springboot 整合 Mybatis 的完整 Web 案例》](http://www.bysocket.com/?p=1610 "Springboot 整合 Mybatis 的完整 Web 案例")<br>
+- springboot-mybatis-annotation <br>
+ [《Spring Boot 整合 Mybatis Annotation 注解的完整 Web 案例》](http://www.bysocket.com/?p=1811 "Spring Boot 整合 Mybatis Annotation 注解的完整 Web 案例")<br>
 - springboot-mybatis-mutil-datasource <br>
  [《Spring Boot 整合 Mybatis 实现 Druid 多数据源详解》](http://www.bysocket.com/?p=1712 "Spring Boot 整合 Mybatis 实现 Druid 多数据源详解")<br>
 
 
 #### d. 『 基础 – 数据缓存篇 』
 - springboot-mybatis-redis <br>
- [《Spring Boot 整合 Redis 实现缓存操作》](http://www.bysocket.com/?p=1712 "Spring Boot 整合 Mybatis 实现 Druid 多数据源详解")<br>
+ [《Spring Boot 整合 Redis 实现缓存操作》](http://www.bysocket.com/?p=1756 "Spring Boot 整合 Mybatis 实现 Druid 多数据源详解")<br>
 
 #### e. 『 其他篇 』
+- springboot-elasticsearch <br>
+ [《Spring Boot 整合 Elasticsearch，实现 function score query 权重分查询》](http://www.bysocket.com/?p=1829 "Spring Boot 整合 Elasticsearch，实现 function score query 权重分查询")<br>
 - springboot-dubbo-server <br>
 - springboot-dubbo-client <br>
 Dubbo 服务提供者工程和 Dubbo 服务消费者工程 <br>
  [《Springboot 整合 Dubbo/ZooKeeper 详解 SOA 案例》](http://www.bysocket.com/?p=1681 "Springboot 整合 Dubbo/ZooKeeper 详解 SOA 案例")<br>
  [《Spring Boot 中如何使用 Dubbo Activate 扩展点》](http://www.bysocket.com/?p=1782 "Spring Boot 中如何使用 Dubbo Activate 扩展点")<br>
-- springboot-validation-over-json <br>
- [《Spring Boot HTTP over JSON 的错误码异常处理》](http://www.bysocket.com/?p=1692 "Spring Boot HTTP over JSON 的错误码异常处理")<br>
 
 
 ## 二、项目 Quick Start 快速开发指南
@@ -65,7 +67,7 @@ CREATE TABLE `city` (
 ````
 插入基础数据
 ````
-INSERT city VALUES (1 ,1,'温岭市','BYSocket 的家在温岭。');
+INSERT city VALUES (1 ,1,'长沙市','BYSocket 的家在长沙。');
 ````
  <br>
 ### 《 springboot-mybatis 工程 Quick Start 》
@@ -90,8 +92,8 @@ http://localhost:8080/api/city?cityName=温岭市
 {
     "id": 1,
     "provinceId": 1,
-    "cityName": "温岭市",
-    "description": "我的家在温岭。"
+    "cityName": "长沙市",
+    "description": "我的家在长沙。"
 }
 ````
 最后，<br/>
