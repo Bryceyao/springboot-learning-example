@@ -18,6 +18,7 @@ public class FilterConfig extends WebMvcConfigurerAdapter{
         List<String> urlPatterns=new ArrayList<String>();
         urlPatterns.add("/api/lcity");//拦截路径，可以添加多个
         urlPatterns.add("/api/fcity/*");
+        urlPatterns.add("/api/callBackCenter");
         registrationBean.setUrlPatterns(urlPatterns);
         registrationBean.setOrder(1);
         return registrationBean;

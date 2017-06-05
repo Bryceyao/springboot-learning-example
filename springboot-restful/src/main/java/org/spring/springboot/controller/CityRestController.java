@@ -42,4 +42,9 @@ public class CityRestController {
     public void modifyCity(@PathVariable("id") Long id) {
         cityService.deleteCity(id);
     }
+    
+    @RequestMapping(value = "/api/callBackCenter", method = RequestMethod.DELETE)
+    public void callBackCenter() {
+        System.out.println("=====callBackCenter====");
+    }
 }
