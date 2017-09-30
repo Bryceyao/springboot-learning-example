@@ -1,12 +1,10 @@
 package org.spring.springboot.controller;
 
-import org.spring.springboot.domain.City;
+import org.spring.springboot.entity.City;
 import org.spring.springboot.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 /**
  * Created by bysocket on 07/02/2017.
