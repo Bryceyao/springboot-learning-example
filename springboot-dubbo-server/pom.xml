@@ -20,6 +20,11 @@
     </properties>
 
     <dependencies>
+    	<dependency>
+            <groupId>springboot</groupId>
+		    <artifactId>springboot-dubbo-client</artifactId>
+		    <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
         <!-- Spring Boot Dubbo 依赖 -->
         <dependency>

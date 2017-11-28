@@ -41,13 +41,13 @@ public class HttpClient {
 
     private CloseableHttpClient m_client = null;
 
-    private Map<String, String> m_requestHeaderMap = new HashMap<>();
-    private Map<String, String> m_responseHeaderMap = new HashMap<>();
+    private Map<String, String> m_requestHeaderMap = new HashMap<String, String>();
+    private Map<String, String> m_responseHeaderMap = new HashMap<String, String>();
 
     
     
     public String post(String url, HttpEntity entity) throws IOException {
-        Map<String, String> m_responseHeaderMap = new HashMap<>();
+        Map<String, String> m_responseHeaderMap = new HashMap<String, String>();
         HttpPost post = new HttpPost(url);
         inputHeader(post);
         post.setEntity(entity);

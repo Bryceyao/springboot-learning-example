@@ -14,4 +14,10 @@ public interface CityDubboService {
      * @param cityName
      */
     City findCityByName(String cityName);
+    
+    /**
+     * 根据城市名称，查询城市信息
+     * @param cityName
+     */
+    public City findCityByObj(City city) ;
 }
