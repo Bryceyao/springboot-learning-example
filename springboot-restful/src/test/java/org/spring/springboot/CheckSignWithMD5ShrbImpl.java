@@ -13,9 +13,6 @@
 //import com.wolaidai.ws.jrocket2.thirdparty.context.CheckSignWithMD5;
 //
 ///**
-// * 华瑞银行验证签名
-// * 
-// * Created by Bryce Yao<bryce.yao@wolaidai.com> on 2017-07-15.
 // */
 //public class CheckSignWithMD5ShrbImpl implements CheckSignWithMD5{
 //    private static final Logger log = LoggerFactory.getLogger(CheckSignWithMD5ShrbImpl.class);
@@ -28,7 +25,7 @@
 //    }
 //
 //    /**
-//     * 华瑞银行 签名方式 reqData+sequenceID+appSecret 组成签名字符串
+//     * 签名方式 reqData+sequenceID+appSecret 组成签名字符串
 //     */
 //    @Override
 //    public boolean verifySign(ContainerRequestContext requestContext) {
